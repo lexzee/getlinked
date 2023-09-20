@@ -1,5 +1,6 @@
 import H2 from './H2'
 import Button from './Button'
+import judges from "../assets/images/judges.png"
 
 const Section4 = () => {
 
@@ -34,7 +35,7 @@ const Section4 = () => {
   return (
     <div className='sec4'>
       <div className="sec4-1">
-        <img src="#" alt="missing image of woman sittings" />
+        <img src={judges} alt="missing image of woman sittings" />
       </div>
       <div className="sec4-2">
         <H2 v1={"Judging Criteria"} v2={"Key attributes"} />

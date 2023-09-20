@@ -7,6 +7,7 @@ import Section3 from './components/Section3'
 import Section4 from './components/Section4'
 import FAQ from './components/FAQ'
 import Timeline from './components/Timeline'
+import Prizes from './components/Prizes'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +28,8 @@ function App() {
         <FAQ />
         <hr />
         <Timeline />
+        <hr />
+        <Prizes />
       </div>
     </>
   )
