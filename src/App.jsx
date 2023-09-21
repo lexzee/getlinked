@@ -8,6 +8,9 @@ import Section4 from './components/Section4'
 import FAQ from './components/FAQ'
 import Timeline from './components/Timeline'
 import Prizes from './components/Prizes'
+import Partners from './components/Partners'
+import Privacy from './components/Privacy'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +33,12 @@ function App() {
         <Timeline />
         <hr />
         <Prizes />
+        <hr />
+        <Partners />
+        <hr />
+        <Privacy />
+        <hr />
+        <Footer />
       </div>
     </>
   )
