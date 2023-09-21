@@ -3,7 +3,6 @@ import gold from "../assets/images/gold_medal.png"
 import bronze from "../assets/images/bronze_medal.png"
 import cup from "../assets/images/cup.png"
 import Rank from "./Rank"
-import RankG from "./RankG"
 import H2 from "./H2"
 
 const Prizes = () => {

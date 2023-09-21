@@ -274,4 +274,175 @@
       }
     }
   }
+
+  .partners{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    padding: 41px;
+
+    .partner1{
+      h2{
+        font-size: 20px;
+        font-weight: bold;
+      }
+      p{
+        font-size: 12px;
+        padding: 5px 20px;
+        line-height: 1.7;
+        font-weight: 100;
+        margin-bottom: 41px;
+      }
+    }
+
+    .partner2{
+      border: 1px solid $pink;
+      border-radius: 5px;
+      // padding: 38.21px 63.88px;
+      padding: 38.21px 40px;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-template-rows: 36.08px auto 36.08px;
+      place-items: center;
+      place-content: center;
+      margin-bottom: 104.41px;
+
+      hr{
+        border: none;
+      }
+      .vertical{
+        border-left: 2px solid $pink;
+        height: 29.84px;
+        margin: 5px 10px;
+      }
+
+      .horizontal{
+        border-bottom: 2px solid $pink;
+        width: 68.27px;
+        margin: 2px 0px;
+      }
+      .libA{
+        width: 31.99px;
+      }
+      .libP{
+        width: 56.57px;
+      }
+      .winwise{
+        width: 34.92px;
+      }
+      .wisper{
+        width: 39.01px;
+      }
+      .pay{
+        width: 54.23px;
+        font-size: 12px;
+
+        span{
+          color: #00A3FF;
+        }
+      }
+      .vplus{
+        display: flex;
+        flex-direction: column;
+        width: 69px;
+
+        .virtual{
+          font-size: 12px;
+
+          span{
+            color: #FF0000;
+          }
+        }
+        .tg{
+          font-size: 4px;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .privacy{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    padding: 71px 47px;
+
+    p{
+      font-size: 12px;
+      line-height: 2;
+      font-weight: 400;
+    }
+    .privacy1{
+      margin-bottom: 48px;
+
+      .head{
+        margin-bottom: 28px;
+      }
+
+      .details{
+        margin-bottom: 30px;
+        padding: 12px;
+      }
+
+      .guidelines{
+        background: #D9D9D908;
+        border: 1px solid $pink;
+        border-radius: 5px;
+        padding: 45px 20px;
+
+        .desc{
+          // padding: 20px;
+          margin-bottom: 21px;
+        }
+
+        .emp, .sub{
+          text-align: left;
+          font-weight: bold;
+          font-size: 12px;
+        }
+
+        .emp{
+          font-size: 13px;
+          color: $pink;
+        }
+
+        .lPolicy{
+          display: flex;
+          align-items: start;
+          justify-content: space-between;
+          text-align: left;
+          margin: 20px auto;
+
+          img{
+            width: 22px;
+            // height: 22px;
+            margin-top: 4px;
+          }
+
+          p{
+            width: 215px;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .privacy2{
+      position: relative;
+
+      .shield{
+        width: 249px;
+        margin-bottom: 219px;
+      }
+
+      .guard{
+        position: absolute;
+        top: 96px;
+        right: 11px;
+        width: 262px;
+      }
+    }
+  }
 }
