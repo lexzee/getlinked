@@ -43,11 +43,11 @@ const Timeline = () => {
           <p>{key + 1}</p>
         </div>
         <div className="content">
-          <p className="focus">
+          <p className="emp">
           {data.event}
           </p>
           <p>{data.details}</p>
-          <p className="focus">
+          <p className="emp">
           {data.date}
           </p>
         </div>
@@ -57,7 +57,7 @@ const Timeline = () => {
   return (
     <div className="timeline">
       <section className="timeline1">
-        <h1>Timeline</h1>
+        <h2>Timeline</h2>
         <p>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
       </section>
 

@@ -235,6 +235,77 @@
     }
   }
 
+  .timeline{
+    padding: 45.68px;
+
+    hr{
+      border: none;
+      border-left: 2px solid $pink;
+      // height: 77px;
+      height: 75px;
+      // margin: auto 19px 0 auto;
+    }
+
+    .timeline1{
+      text-align: center;
+      margin-top: 40px;
+
+      h2{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 17px;
+      }
+
+      p{
+        margin-bottom: 56px;
+        line-height: 2;
+      }
+    }
+
+    .timeline2{
+      p{
+        font-size:  12px;
+        font-weight: 100;
+      }
+      .emp{
+        color: $pink;
+        font-weight: bold;
+      }
+
+      .timelines{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 33.37px;
+
+        .bullet{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 9px;
+
+          p{
+            width: 19.32px;
+            height: 19.32px;
+            border-radius: 100%;
+            background: $primaryColor;
+            text-align: center;
+            margin-top: 4.68px;
+          }
+        }
+
+        .content{
+          p:nth-child(1){
+            margin-bottom: 5px;
+          }
+          p:nth-child(3){
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
   .prizes{
     display: flex;
     flex-direction: column;
