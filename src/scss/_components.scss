@@ -1,0 +1,65 @@
+button{
+  background: $primaryColor;
+  padding: 14.14px 46px 15.02px;
+  border: none;
+  border-radius: 3px;
+}
+.heading2{
+  font-size: 20px;
+  font-weight: bold;
+  span{
+    color: $pink;
+  }
+}
+
+.rank{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 90px;
+  height: 126px;
+  background: hsla(288, 99%, 60%, 0.12);
+  border: 1px solid $pink;
+  border-radius: 8px;
+  padding-top: 40px;
+
+  img{
+    width: 76px;
+    position: absolute;
+    top: -30%;
+  }
+
+  p{
+    font-size: 12px;
+  }
+
+  .position{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
+    line-height: 1.1;
+  }
+
+  .prize{
+    font-size: 14px;
+    font-weight: 700;
+    color: $pink;
+  }
+}
+
+.G{
+  height: 147px;
+  padding-top: 55px;
+  background: #903AFF1f;
+  border: 1px solid $lPurple;
+
+  img{
+    min-width: 125.67px;
+    top: -50%;
+  }
+
+  .prize{
+    color: $lPurple;
+  }
+}

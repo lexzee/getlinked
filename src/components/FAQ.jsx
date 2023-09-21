@@ -47,10 +47,12 @@ const FAQ = () => {
   const FAQbody = FAQdata.map((ques, key) => {
     return (
       <div className="FAQbody" key={key} id={ques.id}>
-        {/* <p className={`question ${key==isActive && "bold"}`} onClick={() => handleClick(key)}>{ques.question} <span className="icon"><img src={icon} alt="icon" className={`${key==isActive ? 'up': 'down'}`} /></span></p> */}
-        <p className={`question ${key==isActive && "bold"}`} onClick={() => handleClick(key)}>{ques.question} <span className="icon"><p className={`${key==isActive ? 'up': 'down'}`}>+</p></span></p>
-        <hr />
+        <div className="question">
+          <p className={`ques ${key==isActive && "bold"}`} >{ques.question} </p>
+          <span className={`icon ${key==isActive ? 'up': 'down'}`} onClick={() => handleClick(key)}>+</span>
+        </div>
         {key === isActive && <p className="answer">{ques.answer}</p>}
+        <hr />
       </div>
     )
   })

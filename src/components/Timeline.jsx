@@ -56,12 +56,12 @@ const Timeline = () => {
   })
   return (
     <div className="timeline">
-      <section className="sec1">
+      <section className="timeline1">
         <h1>Timeline</h1>
         <p>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
       </section>
 
-      <section className="sec2">
+      <section className="timeline2">
         {body}
       </section>
     </div>

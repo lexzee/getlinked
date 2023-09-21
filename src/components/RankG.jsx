@@ -1,11 +1,11 @@
 import React from 'react'
 
-const RankG = (prop) => {
+const RankG = ({img,position,prize}) => {
   return (
-    <div className="rankG">
-      <img src={prop.img} alt="" />
-      <p>{prop.position}</p>
-      <p className="prize">{prop.prize}</p>
+    <div className="rank G">
+      <img src={img} alt="" />
+      <p className='position'>{position}<br />Runner</p>
+      <p className="prize">{prize}</p>
     </div>
   )
 }
