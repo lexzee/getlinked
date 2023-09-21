@@ -445,4 +445,103 @@
       }
     }
   }
+
+  .footer{
+    padding: 51px 68px;
+
+    .foot1{
+      h3{
+        font-size: 14px;
+        font-weight: 500;
+        color: $pink;
+        margin-bottom: 6px;
+      }
+      .emp{
+        color: $pink;
+      }
+      .about{
+        .flogo{
+          margin-right: auto;
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 12px;
+
+          span{
+            color: $pink;
+          }
+        }
+
+        p{
+          font-size: 12px;
+          font-weight: 100;
+        }
+
+        .aboutDesc{
+          margin-bottom: 39px;
+        }
+
+        aside{
+          display: flex;
+          margin-bottom: 32px;
+
+          hr{
+            border-left: 1px solid $pink;
+            height: 17px;
+            margin: 0px 12px;
+          }
+        }
+      }
+
+      .fNav{
+        margin-bottom: 61px;
+
+        p{
+          font-size: 12px;
+          margin-bottom: 12px;
+        }
+
+        aside{
+          p{
+            margin: 0;
+          }
+          .ig, li{
+            width: 24px;
+          }
+          .x{
+            width: 19px;
+          }
+          .fb{
+            width: 10.5px;
+          }
+          display: flex;
+          gap: 16px;
+          place-items: center;
+          // place-content: center;
+        }
+      }
+
+      .contact{
+        p{
+          font-size: 12px;
+        }
+        div{
+          img{
+            margin-top: 4px;
+          }
+          display: flex;
+          align-items: start;
+          gap: 16px;
+          margin-bottom: 23px;
+        }
+      }
+    }
+
+    .foot2{
+      text-align: center;
+      margin-top: 60px;
+      p{
+        font-size: 12px;
+      }
+    }
+  }
 }

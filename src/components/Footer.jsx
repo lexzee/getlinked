@@ -9,31 +9,33 @@ import loc from '../assets/images/location.png'
 const Footer = () => {
   return (
     <footer className="footer">
-      <section className="sec1">
-        <div>
+      <section className="foot1">
+        <div className='about'>
           <h2 className="flogo">get<span>linked</span></h2>
-          <p>Getlinked Tech Hackathon is a technology innovation program established by a group of organizations with the aim of showcasing young and talented individuals in the field of technology</p>
+          <p className='aboutDesc'>Getlinked Tech Hackathon is a technology innovation program established by a group of organizations with the aim of showcasing young and talented individuals in the field of technology</p>
           <aside>
             <p>Terms of Use</p>
+            <hr />
             <p>Privacy Policy</p>
           </aside>
         </div>
 
-        <div>
+        <div className='fNav'>
           <h3>Useful Links</h3>
           <p>Overview</p>
           <p>Timeline</p>
           <p>FAQs</p>
           <p>Register</p>
           <aside>
-            <p className="f">Follow us</p>
-            <img src={ig} alt="" />
-            <img src={X} alt="" />
-            <img src={fb} alt="" />
-            <img src={li} alt="" />
+            <p className="emp">Follow us</p>
+            <img src={ig} alt="" className='ig' />
+            <img src={X} alt="" className='X' />
+            <img src={fb} alt="" className='fb' />
+            <img src={li} alt="" className='li' />
           </aside>
         </div>
-        <div>
+
+        <div className='contact'>
           <h3>Contact Us</h3>
           <div>
             <img src={tele} alt="" />
@@ -45,7 +47,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <section className="sec2">
+      <section className="foot2">
         <p>All rights reserved. © getlinked Ltd.</p>
       </section>
     </footer>
