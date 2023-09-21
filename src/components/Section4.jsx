@@ -35,7 +35,7 @@ const Section4 = () => {
   return (
     <div className='sec4'>
       <div className="sec4-1">
-        <img src={judges} alt="missing image of woman sittings" />
+        <img src={judges} alt="" />
       </div>
       <div className="sec4-2">
         <H2 v1={"Judging Criteria"} v2={"Key attributes"} />
