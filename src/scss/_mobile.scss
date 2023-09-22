@@ -3,15 +3,24 @@
   z-index: -1;
   right: 20%;
 }
+.lens1, .lens2, .lens3, .lens4, .lens5, .lens6, .lens7, .lens8, .lens9{
+  z-index: -1;
+}
 
 .App{
   width: 390px;
   max-width: 390px;
   background: $purple;
+  overflow: hidden;
 
   hr{
+    border: thin solid $pink;
+    border-bottom: 0;
+  }
+  .secDiv{
     border: 1px solid $lPurple;
     border-bottom: 0;
+    opacity: .1;
   }
 
 
@@ -139,12 +148,29 @@
     }
   }
   .sec3{
+    position: relative;
     display: flex;
     flex-direction: column;
     place-items: center;
     text-align: center;
     margin: 0 43.925px;
+    z-index: 1;
 
+    .lens1, .lens2{
+      position: absolute;
+      // z-index: 0;
+      // top: 0;
+      // right: 107px;
+    }
+
+    .lens1{
+      right: 110px;
+      top: 0px;
+    }
+    .lens2{
+      left: 170px;
+      bottom: 50px;
+    }
     img{
       width: 294px;
       height: 382px;
@@ -162,11 +188,25 @@
     }
   }
   .sec4{
+    position: relative;
     display: flex;
     flex-direction: column;
     place-items: center;
     text-align: center;
     margin: 0 43.925px 58.65px;
+    z-index: 1;
+
+    .lens3{
+      position: absolute;
+      top: 100px;
+      right: 20%;
+    }
+    .lens4{
+      position: absolute;
+      bottom: 20px;
+      right: -50%;
+      opacity: .7;
+    }
 
     img{
       width: 332px;
@@ -307,12 +347,25 @@
   }
 
   .prizes{
+    position: relative;
     display: flex;
     flex-direction: column;
     place-items: center;
     place-content: center;
     padding: 72px 0px;
     text-align: center;
+    z-index: 1;
+
+    .lens5{
+      position: absolute;
+      top: 120px;
+      right: 20%;
+    }
+    .lens6{
+      position: absolute;
+      right: -250px;
+      bottom: -20px;
+    }
 
     .prizes1{
       p{
@@ -347,11 +400,24 @@
   }
 
   .partners{
+    position: relative;
     display: flex;
     flex-direction: column;
     place-items: center;
     text-align: center;
     padding: 41px;
+    z-index: 1;
+
+    .lens7{
+      position: absolute;
+      top: 0;
+      right: 20%;
+    }
+    .lens8{
+      position: absolute;
+      bottom: -170px;
+      right: -200px;
+    }
 
     .partner1{
       h2{
@@ -434,11 +500,19 @@
   }
 
   .privacy{
+    position: relative;
     display: flex;
     flex-direction: column;
     place-items: center;
     text-align: center;
     padding: 71px 47px;
+    z-index: 1;
+
+    .lens9{
+      position: absolute;
+      top: 40%;
+      right: 25%;
+    }
 
     p{
       font-size: 12px;
@@ -519,6 +593,8 @@
 
   .footer{
     padding: 51px 68px;
+    // background: url("../src/assets/images/overlay.png");
+    background: hsla(0, 0%, 0%, 0.5);
 
     .foot1{
       h3{

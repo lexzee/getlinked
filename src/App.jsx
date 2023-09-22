@@ -19,25 +19,25 @@ function App() {
     <>
       <div className="App">
         <Navbar />
-        <hr />
+        <hr className='secDiv' />
         <Section1 />
-        <hr />
+        <hr className='secDiv' />
         <Section2 />
-        <hr />
+        <hr className='secDiv' />
         <Section3 />
-        <hr />
+        <hr className='secDiv' />
         <Section4 />
-        <hr />
+        <hr className='secDiv' />
         <FAQ />
-        <hr />
+        <hr className='secDiv' />
         <Timeline />
-        <hr />
+        <hr className='secDiv' />
         <Prizes />
-        <hr />
+        <hr className='secDiv' />
         <Partners />
-        <hr />
+        <hr className='secDiv' />
         <Privacy />
-        <hr />
+        <hr className='secDiv' />
         <Footer />
       </div>
     </>

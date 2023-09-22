@@ -2,6 +2,7 @@ import tick from '../assets/images/greenTick.png'
 import guard from '../assets/images/guardMan.png'
 import shield from '../assets/images/privacy.png'
 import Button from './Button'
+import lens from '../assets/images/lens.png'
 import H2 from './H2'
 
 const Privacy = () => {
@@ -26,6 +27,7 @@ const Privacy = () => {
   })
   return (
     <div className="privacy">
+      <img src={lens} alt="" className="lens9" />
       <section className="privacy1">
         <div className="head">
           <H2 v1={"Privacy Policy and"} v2={"Terms"} />

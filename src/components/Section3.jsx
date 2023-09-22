@@ -1,8 +1,11 @@
 import H2 from "./H2"
+import lens from '../assets/images/lens.png'
 
 const Section3 = () => {
   return (
     <div className="sec3">
+      <img src={lens} alt="" className="lens1" />
+      <img src={lens} alt="" className="lens2" />
       <div className="sec3-1">
         <img src="RFWRFW" alt="" />
       </div>
