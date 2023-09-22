@@ -3,6 +3,8 @@ import Button from './Button'
 import judges from "../assets/images/judges.png"
 import lens3 from "../assets/images/lensml.png"
 import lens4 from "../assets/images/lensmr.png"
+import starW from '../assets/images/star-1.png'
+import starP from '../assets/images/star-p.png'
 
 const Section4 = () => {
 
@@ -38,6 +40,11 @@ const Section4 = () => {
     <div className='sec4'>
       <img src={lens3} alt="" className="lens3" />
       <img src={lens4} alt="" className="lens4" />
+      <img src={starP} alt="" className="starP" />
+      <img src={starW} alt="" className="starW" />
+      <img src={starW} alt="" className="starWs" />
+
+
       <div className="sec4-1">
         <img src={judges} alt="" />
       </div>

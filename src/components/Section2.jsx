@@ -1,9 +1,15 @@
 import idea from "../assets/images/idea.png"
 import H2 from "./H2"
+import starG from '../assets/images/star-g.png'
+import starP from '../assets/images/star-p.png'
+import arrow from '../assets/images/arrow.png'
 
 const Section2 = () => {
   return (
     <div className="sec2">
+      <img src={starG} alt="" className="starG" />
+      <img src={arrow} alt="" className="arrow" />
+      <img src={starG} alt="" className="starG" />
       <div className="sec2-1">
         <img src={idea} alt="" />
       </div>

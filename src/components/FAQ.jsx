@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import manThinking from '../assets/images/manThinking.png'
 import starW from '../assets/images/star-1.png'
-import starP from '../assets/images/star-g.png'
+import starG from '../assets/images/star-g.png'
+import starP from '../assets/images/star-p.png'
 import quesMark from '../assets/images/question.svg'
 import H2 from './H2'
 
@@ -60,6 +61,7 @@ const FAQ = () => {
   })
   return (
     <div className="FAQ">
+      <img src={starP} alt="" className="starP" />
       <div className="FAQ1">
         <H2 v1={"Frequently Ask"} v2={"Question"} />
         <p>We got answers to the questions that you might want to ask about <span>getlinked Hackathon 1.0</span></p>
@@ -71,8 +73,8 @@ const FAQ = () => {
         <img src={quesMark} alt="" className="quesMark s" />
         <img src={starW} alt="" className="starW" />
         <img src={starW} alt="" className="starWs" />
-        <img src={starP} alt="" className="starP" />
-        <img src={starP} alt="" className="starPs" />
+        <img src={starG} alt="" className="starG" />
+        <img src={starG} alt="" className="starGs" />
 
         <img src={manThinking} alt="" />
       </div>

@@ -5,7 +5,7 @@
   min-width: 100%;
   position: absolute;
 }
-.quesMark, .starW, .starWs, .starP, .starPs{
+.quesMark, .starW, .starWs, .starWss, .starP, .starPs, .starG, .starGs, .creative, .arrow{
   z-index: -1;
   position: absolute;
 }
@@ -53,6 +53,7 @@
     text-align: center;
     background: $purple;
 
+
     .lens{
       top: -5%;
       right: 20%;
@@ -76,6 +77,27 @@
     }
 
     .sec1-2{
+      .starW{
+        width: 10px;
+        left: 33%;
+        top: -2%;
+      }
+      .starW:nth-child(2){
+        width: 6px;
+        left: 80%;
+        opacity: .5;
+      }
+      .starW:nth-child(3){
+        width: 6px;
+        left: 75%;
+        top: 27%;
+        opacity: .5;
+      }
+      .creative{
+        width: 18px;
+        right: 26%;
+        top: -4%;
+      }
 
       .desc{
         padding: 0 40px;
@@ -140,9 +162,30 @@
     padding: 0 43.925px;
     z-index: 1;
 
+    .starG{
+      width: 11px;
+      left: 13%;
+      top: 10%;
+    }
+    .starG:nth-child(1){
+      width: 8px;
+      right: -65%;
+      top: 47%;
+    }
+    .arrow{
+      width: 19.46px;
+      top: 37%;
+    }
+
     img{
       width: 264px;
       margin: 30px auto 58px;
+      z-index: -2;
+    }
+    .img::before{
+      content: "The Big Ideal";
+      color: #FF0000;
+      z-index: 3;
     }
 
     p{
@@ -161,7 +204,6 @@
     flex-direction: column;
     place-items: center;
     text-align: center;
-    padding: 0 43.925px;
     background: $purple;
 
     .lens1{
@@ -172,17 +214,35 @@
       left: 80px;
       bottom: 111px;
     }
+    .starW{
+      width: 10px;
+      left: 40px;
+      // top: 21%;
+      top: 185px;
+    }
+    .starWs{
+      width: 12px;
+      right: 43px;
+      top: 59%;
+      opacity: .3;
+    }
+    .starWss{
+      width: 12px;
+      left: 120px;
+      top: 94%;
+      opacity: 1;
+    }
+
     img{
-      width: 294px;
-      // height: 382px;
-      margin: 0px auto 10px;
+      // width: 294px;
+      margin: 0px 10px 10px;
     }
 
     p{
       font-size: 13px;
       margin-top: 9px;
       margin-bottom: 67px;
-      padding: 0 30px;
+      padding: 0 63.925px;
       font-weight: 300;
       line-height: 2;
       min-width: 321px;
@@ -206,7 +266,7 @@
     flex-direction: column;
     place-items: center;
     text-align: center;
-    padding: 0 43.925px 58.65px;
+    padding: 0 0 58.65px;
     background: $purple;
 
     .lens3{
@@ -217,6 +277,21 @@
       bottom: 0px;
       right: -20%;
       opacity: .7;
+    }
+    .starP{
+      width: 13px;
+      top: -4.5%;
+    }
+    .starW{
+      width: 10px;
+      top: 86%;
+      right: 10%;
+    }
+    .starWs{
+      width: 12px;
+      top: 11%;
+      right: 41%;
+      opacity: .4;
     }
 
     img{
@@ -230,13 +305,14 @@
         font-size: 12px;
         margin-top: 16px;
         margin-bottom: 14px;
-        padding: 0 30px;
+        padding: 0 73.925px;
         font-weight: 300;
         line-height: 2;
         min-width: 321px;
 
         span{
-          color: $pink;
+          // color: $pink;
+          color: #FF26B9;
           font-size: 13px;
           font-weight: bold;
         }
@@ -252,6 +328,12 @@
     text-align: center;
     margin: 60px 43.925px 58.65px;
     z-index: 1;
+
+    .starP{
+      width: 18px;
+      top: -2%;
+      left: 0;
+    }
 
     .FAQ1{
       margin-bottom: 86px;
@@ -314,12 +396,12 @@
         left: 5%;
         opacity: .4;
       }
-      .starP{
+      .starG{
         width: 10px;
         left: 50%;
         top: -5%;
       }
-      .starPs{
+      .starGs{
         width: 7px;
         left: 20%;
         top: 30%;
