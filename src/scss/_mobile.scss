@@ -1,10 +1,9 @@
-.lens{
+.lens, .lens1, .lens2, .lens3, .lens4, .lens5, .lens6, .lens7, .lens8, .lens9{
+  z-index: -1;
+  // background: $purple;
+  mix-blend-mode: hard-light;
+  min-width: 100%;
   position: absolute;
-  z-index: -1;
-  right: 20%;
-}
-.lens1, .lens2, .lens3, .lens4, .lens5, .lens6, .lens7, .lens8, .lens9{
-  z-index: -1;
 }
 
 .App{
@@ -12,6 +11,8 @@
   max-width: 390px;
   background: $purple;
   overflow: hidden;
+  position: relative;
+  z-index: 3;
 
   hr{
     border: thin solid $pink;
@@ -27,6 +28,7 @@
   .navbar{
     padding: 30px 48px;
     display: flex;
+    z-index: 1;
 
     .logo{
       margin-right: auto;
@@ -45,20 +47,18 @@
     flex-direction: column;
     place-items: center;
     text-align: center;
-    z-index: 1;
+    background: $purple;
 
-    // .lens{
-    //   position: absolute;
-    //   z-index: 0;
-    //   right: 1%;
-    // }
+    .lens{
+      top: -5%;
+      right: 20%;
+    }
 
     .sec1-1{
       padding: 40px 0;
       display: flex;
       flex-direction: column;
       background: transparent;
-      z-index: 1;
 
       p{
         font-style: italic;
@@ -110,9 +110,12 @@
 
       .images{
         position: relative;
+        // background: url('../src/assets/images/bgBlend.png');
+        background: hsla(256, 48%, 11%, 1);
 
         .tGuy{
-          opacity: 1;
+          // opacity: 1;
+          mix-blend-mode: luminosity;
         }
         .globe{
           position: absolute;
@@ -130,7 +133,8 @@
     flex-direction: column;
     place-items: center;
     text-align: center;
-    margin: 0 43.925px;
+    padding: 0 43.925px;
+    z-index: 1;
 
     img{
       width: 264px;
@@ -153,27 +157,20 @@
     flex-direction: column;
     place-items: center;
     text-align: center;
-    margin: 0 43.925px;
-    z-index: 1;
-
-    .lens1, .lens2{
-      position: absolute;
-      // z-index: 0;
-      // top: 0;
-      // right: 107px;
-    }
+    padding: 0 43.925px;
+    background: $purple;
 
     .lens1{
       right: 110px;
-      top: 0px;
+      top: -15%;
     }
     .lens2{
-      left: 170px;
-      bottom: 50px;
+      left: 80px;
+      bottom: 111px;
     }
     img{
       width: 294px;
-      height: 382px;
+      // height: 382px;
       margin: 0px auto 10px;
     }
 
@@ -187,24 +184,34 @@
       min-width: 321px;
     }
   }
+
+  .sec3::before{
+    content: '';
+    position: absolute;
+    top: -75px;
+    width: 100vw;
+    height: 7em;
+    z-index: -3;
+    background: green;
+    background: $purple;
+    // margin-top: -20px;
+  }
   .sec4{
     position: relative;
     display: flex;
     flex-direction: column;
     place-items: center;
     text-align: center;
-    margin: 0 43.925px 58.65px;
-    z-index: 1;
+    padding: 0 43.925px 58.65px;
+    background: $purple;
 
     .lens3{
-      position: absolute;
-      top: 100px;
+      top: 40px;
       right: 20%;
     }
     .lens4{
-      position: absolute;
-      bottom: 20px;
-      right: -50%;
+      bottom: 0px;
+      right: -20%;
       opacity: .7;
     }
 
@@ -354,16 +361,16 @@
     place-content: center;
     padding: 72px 0px;
     text-align: center;
-    z-index: 1;
+    background: $purple;
+    background: rgba(0, 0, 0, 0.2);
+    background: rgba(16, 10, 33, 0.73);
 
     .lens5{
-      position: absolute;
-      top: 120px;
-      right: 20%;
+      top: 20px;
+      right: 10%;
     }
     .lens6{
-      position: absolute;
-      right: -250px;
+      right: -35%;
       bottom: -20px;
     }
 
@@ -371,9 +378,7 @@
       p{
         margin-top: 3px;
         font-size: 12px;
-        // width: 225px;
         width: 250px;
-        // padding: 0 10px;
       }
     }
 
@@ -398,6 +403,13 @@
       }
     }
   }
+  .prizes::before{
+    content: "";
+    width: 100vw;
+    background-color: #FF0000;
+    position: absolute;
+  }
+
 
   .partners{
     position: relative;
@@ -406,17 +418,15 @@
     place-items: center;
     text-align: center;
     padding: 41px;
-    z-index: 1;
+    background: $purple;
 
     .lens7{
-      position: absolute;
-      top: 0;
+      top: -20%;
       right: 20%;
     }
     .lens8{
-      position: absolute;
-      bottom: -170px;
-      right: -200px;
+      // bottom: -170px;
+      // right: -200px;
     }
 
     .partner1{
@@ -507,6 +517,7 @@
     text-align: center;
     padding: 71px 47px;
     z-index: 1;
+    // background: $purple;
 
     .lens9{
       position: absolute;

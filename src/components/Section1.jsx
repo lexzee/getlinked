@@ -2,7 +2,7 @@ import bLine from "../assets/images/bend-line.png"
 import Button from "./Button"
 import VRGuy from "../assets/images/VRGuy.png"
 import globe from "../assets/images/globe.png"
-import lens from "../assets/images/lens.png"
+import lens from "../assets/images/lensml.png"
 
 const Section1 = () => {
   return (

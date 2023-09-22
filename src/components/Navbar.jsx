@@ -1,5 +1,5 @@
 import Button from "./Button"
-import logo from '../assets/images/ig.png'
+import menu from '../assets/images/menu.svg'
 
 const Navbar = () => {
   return (
@@ -13,7 +13,7 @@ const Navbar = () => {
         <li><Button value="Register" /></li>
       </ul>
       <div>
-        <img src={logo} alt="" className="menu"/>
+        <img src={menu} alt="" className="menu"/>
         <ul className="mNav hidden">
           <li>Timeline</li>
           <li>Overview</li>

@@ -1,7 +1,8 @@
 import H2 from './H2'
 import Button from './Button'
 import judges from "../assets/images/judges.png"
-import lens from "../assets/images/lens.png"
+import lens3 from "../assets/images/lensml.png"
+import lens4 from "../assets/images/lensmr.png"
 
 const Section4 = () => {
 
@@ -35,8 +36,8 @@ const Section4 = () => {
   })
   return (
     <div className='sec4'>
-      <img src={lens} alt="" className="lens3" />
-      <img src={lens} alt="" className="lens4" />
+      <img src={lens3} alt="" className="lens3" />
+      <img src={lens4} alt="" className="lens4" />
       <div className="sec4-1">
         <img src={judges} alt="" />
       </div>

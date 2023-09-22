@@ -2,13 +2,14 @@ import winwise from '../assets/images/Winwise.png'
 import libA from '../assets/images/LibertyA.png'
 import libP from '../assets/images/LibertyP.png'
 import wisper from '../assets/images/wisper.png'
-import lens from '../assets/images/lens.png'
+import lens7 from '../assets/images/lensml.png'
+import lens8 from '../assets/images/lensmr.png'
 
 const Partners = () => {
   return (
     <div className="partners">
-      <img src={lens} alt="" className="lens7" />
-      <img src={lens} alt="" className="lens8" />
+      <img src={lens7} alt="" className="lens7" />
+      <img src={lens8} alt="" className="lens8" />
       <section className="partner1">
         <h2>Parners and Sponsors</h2>
         <p>Getlinked Hackathon 1.0is honored to have the following major companies as its partners and sponsors</p>
