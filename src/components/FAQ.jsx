@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import manThinking from '../assets/images/manThinking.png'
-import icon from '../assets/images/star-1.png'
+import starW from '../assets/images/star-1.png'
+import starP from '../assets/images/star-g.png'
+import quesMark from '../assets/images/question.svg'
 import H2 from './H2'
 
 const FAQ = () => {
@@ -64,6 +66,14 @@ const FAQ = () => {
         {FAQbody}
       </div>
       <div className="FAQ2">
+        <img src={quesMark} alt="" className="quesMark" />
+        <img src={quesMark} alt="" className="quesMark s" />
+        <img src={quesMark} alt="" className="quesMark s" />
+        <img src={starW} alt="" className="starW" />
+        <img src={starW} alt="" className="starWs" />
+        <img src={starP} alt="" className="starP" />
+        <img src={starP} alt="" className="starPs" />
+
         <img src={manThinking} alt="" />
       </div>
     </div>
