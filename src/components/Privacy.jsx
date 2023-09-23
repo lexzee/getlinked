@@ -5,6 +5,9 @@ import Button from './Button'
 import lens9 from '../assets/images/lensml.png'
 import lens10 from '../assets/images/lensmr.png'
 import H2 from './H2'
+import starW from '../assets/images/star-1.png'
+import starG from '../assets/images/star-g.png'
+import starP from '../assets/images/star-p.png'
 
 const Privacy = () => {
   const data = [
@@ -30,7 +33,12 @@ const Privacy = () => {
     <div className="privacy">
       <img src={lens10} alt="" className="lens10" />
       <img src={lens9} alt="" className="lens9" />
+
       <section className="privacy1">
+        <img src={starW} alt="" className="starW" />
+        <img src={starP} alt="" className="starP" />
+        <img src={starG} alt="" className="starG" />
+
         <div className="head">
           <H2 v1={"Privacy Policy and"} v2={"Terms"} />
           <p>Last updated on September 12, 2023</p>
@@ -48,6 +56,11 @@ const Privacy = () => {
       </section>
 
       <section className="privacy2">
+        <img src={starW} alt="" className="starW" />
+        <img src={starW} alt="" className="starWs" />
+        <img src={starW} alt="" className="starWss" />
+        <img src={starP} alt="" className="starP" />
+
         <img src={shield} alt="" className='shield' />
         <img src={guard} alt="" className='guard' />
       </section>

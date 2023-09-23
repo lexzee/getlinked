@@ -5,11 +5,19 @@ import li from '../assets/images/linkedin.png'
 import ig from '../assets/images/ig.png'
 import tele from '../assets/images/telephone.png'
 import loc from '../assets/images/location.png'
+import starW from '../assets/images/star-1.png'
+import starG from '../assets/images/star-g.png'
+// import starP from '../assets/images/star-p.png'
 
 const Footer = () => {
   return (
     <footer className="footer">
       <section className="foot1">
+        <img src={starW} alt="" className="starW" />
+        <img src={starW} alt="" className="starWs" />
+        <img src={starW} alt="" className="starWss" />
+        <img src={starG} alt="" className="starG" />
+
         <div className='about'>
           <h2 className="flogo">get<span>linked</span></h2>
           <p className='aboutDesc'>Getlinked Tech Hackathon is a technology innovation program established by a group of organizations with the aim of showcasing young and talented individuals in the field of technology</p>

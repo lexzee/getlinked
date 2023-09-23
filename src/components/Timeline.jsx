@@ -1,4 +1,5 @@
-import React from 'react'
+import starW from '../assets/images/star-1.png'
+import starP from '../assets/images/star-p.png'
 
 const Timeline = () => {
 
@@ -56,6 +57,9 @@ const Timeline = () => {
   })
   return (
     <div className="timeline">
+      <img src={starP} alt="" className="starP" />
+      <img src={starW} alt="" className="starW" />
+      <img src={starW} alt="" className="starWs" />
       <section className="timeline1">
         <h2>Timeline</h2>
         <p>Here is the breakdown of the time we anticipate using for the upcoming event.</p>

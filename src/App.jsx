@@ -11,6 +11,7 @@ import Prizes from './components/Prizes'
 import Partners from './components/Partners'
 import Privacy from './components/Privacy'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +19,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <Navbar />
+        {/* <Navbar />
         <hr className='secDiv' />
         <Section1 />
         <hr className='secDiv' />
@@ -38,7 +39,9 @@ function App() {
         <hr className='secDiv' />
         <Privacy />
         <hr className='secDiv' />
-        <Footer />
+        <Footer /> */}
+
+        <Contact />
       </div>
     </>
   )

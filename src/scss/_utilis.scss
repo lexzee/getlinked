@@ -20,9 +20,10 @@ h1,h2,h3,h4,h5,h6,p{
   font-weight: normal;
 }
 
-div{
+.App > div, .App footer{
   position: relative;
   z-index: 1;
+  background: $purple;
 }
 
 img{

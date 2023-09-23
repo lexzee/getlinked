@@ -412,12 +412,29 @@
   .timeline{
     padding: 45.68px;
 
+    .starP{
+      width: 14px;
+      top: 20%;
+      left: 21%;
+    }
+
+    .starW{
+      width: 10px;
+      right: 20%;
+      top: 54.5%;
+    }
+
+    .starWs{
+      width: 10px;
+      left: 7%;
+      bottom: 3%;
+      opacity: .4;
+    }
+
     hr{
       border: none;
       border-left: 2px solid $pink;
-      // height: 77px;
       height: 75px;
-      // margin: auto 19px 0 auto;
     }
 
     .timeline1{
@@ -489,8 +506,33 @@
     padding: 72px 0px;
     text-align: center;
     background: $purple;
-    background: rgba(0, 0, 0, 0.2);
+    // background: rgba(0, 0, 0, 0.2);
     background: rgba(16, 10, 33, 0.73);
+    z-index: 1;
+
+    .starG{
+      width: 8px;
+      top: 11%;
+      right: 25%;
+    }
+
+    .starW{
+      width: 10px;
+      left: 14%;
+      top: 56%;
+    }
+
+    .starWs{
+      width: 10px;
+      right: 17%;
+      bottom: 37%;
+    }
+    .starWss{
+      width: 10px;
+      right: 30%;
+      bottom: 5%;
+      opacity: .4;
+    }
 
     .lens5{
       top: 20px;
@@ -554,6 +596,16 @@
     .lens8{
       bottom: -180px;
       right: -80px;
+    }
+    .starP{
+      width: 8px;
+      top: 38%;
+      left: 14%;
+    }
+    .starW{
+      width: 10px;
+      top: 67%;
+      right: 17%;
     }
 
     .partner1{
@@ -643,8 +695,6 @@
     place-items: center;
     text-align: center;
     padding: 71px 47px;
-    z-index: -1;
-    background: $purple;
 
     .lens9{
       position: absolute;
@@ -663,7 +713,25 @@
       font-weight: 400;
     }
     .privacy1{
+      .starP{
+        width: 17px;
+        top: 22%;
+        right: 8%;
+      }
+      .starW{
+        width: 8px;
+        right: 20%;
+        top: -4%;
+        opacity: .4;
+      }
+      .starG{
+        width: 17px;
+        left: -8%;
+        bottom: 20%;
+      }
+
       margin-bottom: 48px;
+      position: relative;
 
       .head{
         margin-bottom: 28px;
@@ -683,6 +751,7 @@
         .desc{
           // padding: 20px;
           margin-bottom: 21px;
+          font-weight: 100;
         }
 
         .emp, .sub{
@@ -719,6 +788,28 @@
 
     .privacy2{
       position: relative;
+      .starP{
+        width: 17px;
+        top: 13%;
+        left: -13%;
+      }
+      .starW{
+        width: 8px;
+        top: 18%;
+        right: 20%;
+      }
+      .starWs{
+        width: 10px;
+        bottom: 30%;
+        left: 13%;
+      }
+      .starWss{
+        width: 10px;
+        bottom: 29%;
+        right: 2%;
+        opacity: .4;
+      }
+
 
       .shield{
         width: 249px;
@@ -739,6 +830,28 @@
     background: rgba(0, 0, 0, 0.2);
 
     .foot1{
+      .starW{
+        width: 15px;
+        top: 45%;
+        right: 50%;
+        opacity: .4;
+      }
+      .starWs{
+        width: 9px;
+        top: 17%;
+        left: 9%;
+      }
+      .starWss{
+        width: 7px;
+        bottom: 26%;
+        right: 20%;
+      }
+      .starG{
+        width: 7px;
+        bottom: 14%;
+        left: 33%;
+      }
+
       h3{
         font-size: 14px;
         font-weight: 500;
@@ -793,7 +906,7 @@
           p{
             margin: 0;
           }
-          .ig, li{
+          .ig, .li{
             width: 24px;
           }
           .x{
@@ -832,5 +945,152 @@
         font-size: 12px;
       }
     }
+  }
+
+
+
+  .contact{
+    position: relative;
+    padding: 47px 46px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+
+    .lens{
+      left: -20%;
+      top: 7%;
+    }
+    .starG{
+      width: 11px;
+      top: 8%;
+      left: 45%;
+    }
+    .starW{
+      width: 12px;
+      bottom: 24%;
+      right: 7%;
+    }
+    .starWs{
+      width: 16px;
+      top: 17%;
+      right: 12%;
+      opacity: .4;
+    }
+    .starP{
+      width: 12px;
+      bottom: 16%;
+      left: 9%;
+    }
+
+    .back{
+      position: relative;
+      display: flex;
+      place-content: center;
+      place-items: center;
+      padding: 10px;
+      width: 23px;
+      height: 23px;
+      margin-bottom: 41px;
+      background: $primaryColor;
+      border-radius: 100%;
+
+      &::after{
+        content: '<';
+        display: flex;
+        place-content: center;
+        place-items: center;
+        font-size: 12px;
+        width: 21px;
+        height: 21px;
+        border-radius: 100%;
+        // top: px;
+        left: 1px;
+        position: absolute;
+        background-color: $purple;
+      }
+    }
+    .aside{
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+      place-items: center;
+      margin-top: 41px;
+
+      p{
+        font-size: 12px;
+        color: $pink;
+      }
+
+      div{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .ig, .li{
+          width: 17px;
+        }
+        .X{
+          width: 13px;
+        }
+        .fb{
+          width: 7px;
+        }
+      }
+    }
+
+    .heading{
+      color: $pink;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.3;
+      width: 195px;
+    }
+
+    .sHeading{
+      font-size: 12px;
+      width: 239px;
+      margin: 24px 0 30px;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      text-align: center;
+
+      input{
+        text-align: left;
+        height: 47px;
+        padding: 0 16px;
+        font-size: 16px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid #fff;
+        border-radius: 4px;
+
+        &::placeholder{
+          color: #fff;
+        }
+      }
+
+      textarea{
+        text-align: left;
+        height: 160px;
+        padding: 27px 24px;
+        font-size: 16px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid #fff;
+        border-radius: 4px;
+
+        &::placeholder{
+          color: #fff;
+        }
+      }
+
+      button{
+        width: fit-content;
+        align-self: center;
+      }
+    }
+
   }
 }

@@ -1,0 +1,38 @@
+@keyframes pulse{
+  0%{
+    transform: translate(0, 0);
+  }
+
+  50%{
+    // transform: translate3d(12px, 12px, 2px);
+
+    // transform: translate3d(2px, 2px, 2em);
+
+    // transform: translate(0px, -3px);
+    opacity: .5;
+  }
+
+  100%{
+    // transform: translate3d(1px, 1px, 2px)
+
+    transform: translate(0px, -30px);
+    opacity: .3;
+  }
+}
+
+.quesMark, .starW, .starWs, .starWss, .starP, .starPs, .starG, .starGs{
+  animation: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+
+.starG, .starP, .starW{
+  
+}
+.quesMark{
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  // animation-direction: alternate;
+}
