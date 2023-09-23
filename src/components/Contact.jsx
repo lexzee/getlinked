@@ -8,8 +8,9 @@ import starG from '../assets/images/star-g.png'
 import starP from '../assets/images/star-p.png'
 import lens from '../assets/images/lensml.png'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
-const Contact = () => {
+const Contact = ({handleSubmit}) => {
 
   const [contactForm, setContactForm] = useState({
     name: '',
@@ -23,21 +24,20 @@ const Contact = () => {
     registration:{}
   })
 
-  // fetch("https://swapi.dev/api/people/l")
-  useEffect(()=>{
-    fetch("https://backend.getlinked.ai/hackathon/categories-list")
-      .then(res => res.json())
-      .then(data => setGetLinkedData(prev => ({
-        ...prev,
-        contact: data
-      })))
-    fetch("https://backend.getlinked.ai/hackathon/registration")
-      .then(res => res.json())
-      .then(data => setGetLinkedData(prev => ({
-        ...prev,
-        registration: data
-      })))
-  }, [])
+  // useEffect(()=>{
+  //   fetch("https://backend.getlinked.ai/hackathon/categories-list")
+  //     .then(res => res.json())
+  //     .then(data => setGetLinkedData(prev => ({
+  //       ...prev,
+  //       contact: data
+  //     })))
+  //   fetch("https://backend.getlinked.ai/hackathon/registration")
+  //     .then(res => res.json())
+  //     .then(data => setGetLinkedData(prev => ({
+  //       ...prev,
+  //       registration: data
+  //     })))
+  // }, [])
 
     console.log(getLinkedData);
 
@@ -57,8 +57,10 @@ const Contact = () => {
       <img src={starP} alt="" className="starP" />
       <img src={starG} alt="" className="starG" />
 
-      <div className="back">
-      </div>
+      <Link to='/'>
+        <div className="back">
+        </div>
+      </Link>
       <div className="contact1">
       </div>
 
@@ -71,7 +73,7 @@ const Contact = () => {
         <p className='sHeading'>
         Email us below to any question related to our event
         </p>
-        <form action="" className="contactF">
+        <form action="" className="contactF" onSubmit={handleSubmit}>
           <input
             type="text"
             className="name"

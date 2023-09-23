@@ -6,6 +6,7 @@ import lens from "../assets/images/lensml.png"
 import idea from "../assets/images/creative.png"
 import starW from '../assets/images/star-1.png'
 import chain from "../assets/images/chain.png"
+import { Link } from "react-router-dom"
 
 const Section1 = () => {
   return (
@@ -24,7 +25,9 @@ const Section1 = () => {
           <img src={idea} alt="" className="creative" />
           <h1>getlinked Tech Hackathon <span>1.0</span><img style={{display: "inline", width: "32.8px"}}src={chain} alt="" className="chain" />💥</h1>
           <p>Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize</p>
-          <Button value={"Register"} />
+          <Link to="register">
+            <Button value={"Register"} />
+          </Link>
           <p className="cdown">{`00`}<span>H</span> {`00`}<span>M</span> {`00`}<span>S</span></p>
         </div>
         <div className="images">

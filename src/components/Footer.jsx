@@ -7,6 +7,7 @@ import tele from '../assets/images/telephone.svg'
 import loc from '../assets/images/location.png'
 import starW from '../assets/images/star-1.png'
 import starG from '../assets/images/star-g.png'
+import { Link } from 'react-router-dom'
 // import starP from '../assets/images/star-p.png'
 
 const Footer = () => {
@@ -34,11 +35,10 @@ const Footer = () => {
             <li><a href="#overview">Overview</a></li>
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#faq">FAQs</a></li>
-            <li><a href="#register">Register</a></li>
+            <Link to='register'>
+              <li>Register</li>
+            </Link>
           </ul>
-          {/* <p>Timeline</p>
-          <p>FAQs</p>
-          <p>Register</p> */}
           <aside>
             <p className="emp">Follow us</p>
             <img src={ig} alt="" className='ig' />

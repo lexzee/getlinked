@@ -6,7 +6,7 @@ import lens from '../assets/images/lensml.png'
 import Confirmation from './Confirmation'
 import { useState } from 'react'
 
-const Register = () => {
+const Register = ({handleSubmit}) => {
 
   const [regForm, setRegForm] = useState({
     id: '',
@@ -27,10 +27,6 @@ const Register = () => {
       ...prev,
       [name]: type === "checkbox" ? checked : value
     }))
-  }
-
-  const handleSubmit = (e) =>{
-    e.preventDefault();
   }
 
   return (
