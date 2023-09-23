@@ -77,6 +77,11 @@
       flex-direction: column;
       background: transparent;
 
+
+      .idea{
+
+      }
+
       p{
         font-style: italic;
         font-weight: 500;
@@ -89,6 +94,11 @@
     }
 
     .sec1-2{
+      .creative{
+        width: 18px;
+        right: 28%;
+        top: 13%;
+      }
       .starW{
         width: 10px;
         left: 33%;
@@ -104,11 +114,6 @@
         left: 75%;
         top: 27%;
         opacity: .5;
-      }
-      .creative{
-        width: 18px;
-        right: 26%;
-        top: -4%;
       }
 
       .desc{
@@ -909,9 +914,18 @@
       .fNav{
         margin-bottom: 61px;
 
-        p{
+        p, a{
           font-size: 12px;
           margin-bottom: 12px;
+        }
+        ul{
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          li:last-child{
+            margin-bottom: 5px;
+          }
         }
 
         aside{
@@ -930,7 +944,6 @@
           display: flex;
           gap: 16px;
           place-items: center;
-          // place-content: center;
         }
       }
 
@@ -1187,6 +1200,10 @@
               font-size: 13px;
               margin-bottom: 15px;
             }
+            option{
+              background: rgba(255, 255, 255, 0.03);
+              color: $pink;
+            }
 
             .cat-size{
               // width: inherit;
@@ -1194,13 +1211,16 @@
               overflow: hidden;
               position: relative;
               display: flex;
+              margin-bottom: 15px;
 
-              .cat input{
-                max-width: 155px;
+              .cat select{
+                width: 155px;
+                margin-top: 5px;
               }
 
-              .size input{
+              .size select{
                 max-width: 87px;
+                margin-top: 5px;
               }
             }
 

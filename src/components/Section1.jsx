@@ -9,7 +9,7 @@ import chain from "../assets/images/chain.png"
 
 const Section1 = () => {
   return (
-    <div className="sec1">
+    <div className="sec1" id="overview">
       <img src={lens} alt="" className="lens" />
       <div className="sec1-1">
         <p>Igniting a Revolution in HR innovation</p>

@@ -3,7 +3,7 @@ import X from '../assets/images/X.png'
 import fb from '../assets/images/facebook.png'
 import li from '../assets/images/linkedin.png'
 import ig from '../assets/images/ig.png'
-import tele from '../assets/images/telephone.png'
+import tele from '../assets/images/telephone.svg'
 import loc from '../assets/images/location.png'
 import starW from '../assets/images/star-1.png'
 import starG from '../assets/images/star-g.png'
@@ -30,10 +30,15 @@ const Footer = () => {
 
         <div className='fNav'>
           <h3>Useful Links</h3>
-          <p>Overview</p>
-          <p>Timeline</p>
+          <ul className='links'>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#register">Register</a></li>
+          </ul>
+          {/* <p>Timeline</p>
           <p>FAQs</p>
-          <p>Register</p>
+          <p>Register</p> */}
           <aside>
             <p className="emp">Follow us</p>
             <img src={ig} alt="" className='ig' />

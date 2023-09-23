@@ -56,7 +56,7 @@ const Timeline = () => {
     )
   })
   return (
-    <div className="timeline">
+    <div className="timeline" id='timeline'>
       <img src={starP} alt="" className="starP" />
       <img src={starW} alt="" className="starW" />
       <img src={starW} alt="" className="starWs" />

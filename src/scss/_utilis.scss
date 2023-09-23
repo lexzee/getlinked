@@ -42,8 +42,28 @@ input{
   }
 }
 
+select{
+  height: 39px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 12px 10px;
+  font-size: 12px;
+}
+
 .hidden{
   display: none;
+}
+
+a,li{
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+  // margin: 20px 0;
+
+  &:hover{
+    color: $pink;
+  }
 }
 
 .up{

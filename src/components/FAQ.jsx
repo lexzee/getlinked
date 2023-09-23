@@ -60,7 +60,7 @@ const FAQ = () => {
     )
   })
   return (
-    <div className="FAQ">
+    <div className="FAQ" id='faq'>
       <img src={starP} alt="" className="starP" />
       <div className="FAQ1">
         <H2 v1={"Frequently Ask"} v2={"Question"} />
