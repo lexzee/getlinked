@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <div className="App">
-        {/* <Navbar />
+        <Navbar />
         <hr className='secDiv' />
         <Section1 />
         <hr className='secDiv' />
@@ -40,9 +40,9 @@ function App() {
         <hr className='secDiv' />
         <Privacy />
         <hr className='secDiv' />
-        <Footer /> */}
+        <Footer />
 
-        {/* <Contact /> */}
+        <Contact />
         <Register />
       </div>
     </>
