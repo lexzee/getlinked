@@ -1155,6 +1155,7 @@
           }
           aside{
             display: flex;
+            place-items: center;
             align-items: last baseline;
             gap: 6.18px;
             p{
@@ -1164,6 +1165,7 @@
 
             .dot{
               display: flex;
+              place-content: center;
               width: 89.1px;
               border-bottom: 1px dotted $pink;
             }
