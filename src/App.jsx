@@ -12,6 +12,7 @@ import Partners from './components/Partners'
 import Privacy from './components/Privacy'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
+import Register from './components/Register'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,7 +42,8 @@ function App() {
         <hr className='secDiv' />
         <Footer /> */}
 
-        <Contact />
+        {/* <Contact /> */}
+        <Register />
       </div>
     </>
   )
