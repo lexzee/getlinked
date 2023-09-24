@@ -76,7 +76,7 @@ const FAQ = () => {
         <img src={starG} alt="" className="starG" />
         <img src={starG} alt="" className="starGs" />
 
-        <img src={manThinking} alt="" />
+        <img src={manThinking} alt="" className='mImage' />
       </div>
     </div>
   )

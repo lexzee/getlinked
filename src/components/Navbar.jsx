@@ -2,11 +2,11 @@ import Button from "./Button"
 import menu from '../assets/images/menu.svg'
 import { Link } from "react-router-dom"
 
-const Navbar = () => {
+const Navbar = ({isMobile}) => {
   return (
     <nav className='navbar'>
       <p className="logo">get<span>linked</span></p>
-      <ul className="dNav hidden">
+      <ul className={`dNav ${!isMobile && "hidden"}`}>
         <li><a href="#timeline">Timeline</a></li>
         <Link to="/">
           <li>Overview</li>
@@ -16,7 +16,7 @@ const Navbar = () => {
         <li><Button value="Register" /></li>
       </ul>
       <div>
-        <img src={menu} alt="" className="menu"/>
+        <img src={menu} alt="" className={`menu ${!isMobile ? "show" : "hidden"}` } />
         <ul className="mNav hidden">
           <li><a href="#overview">Overview</a></li>
           <li><a href="#timeline">Timeline</a></li>

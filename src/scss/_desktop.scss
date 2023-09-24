@@ -1,0 +1,200 @@
+@media (min-width: "768px"){
+  .App{
+    width: 1512px;
+    max-width: 1512px;
+    // z-index: 2;
+
+    h2, .heading2{
+      font-size: 32px;
+    }
+
+    .navbar{
+      flex-direction: row;
+      padding: 67px 128px 30px;
+
+      .logo{
+        font-size: 36px;
+      }
+
+      .dNav{
+        display: flex;
+        gap: 56px;
+
+        li{
+          font-size: 16px;
+        }
+
+        button{
+          margin-left: calc(121px - 36px);
+        }
+      }
+    }
+
+    .sec1{
+      flex-direction: column;
+      z-index: 3;
+
+      .sec1-1{
+        p{
+          font-size: 36px;
+        }
+      }
+
+      .sec1-2{
+        display: grid;
+        grid-template-columns: 843px calc(1512px - 843px);
+        // flex-direction: row;
+
+        .desc{
+          text-align: left;
+          margin-left: auto;
+          padding-top: 80px;
+          // margin-left: 128px;
+          width: 722px;
+          // margin-right: -42%;
+          h1{
+            // width: 722px;
+            font-size: 75px;
+          }
+
+          p{
+            padding: 0;
+            font-size: 20px;
+            width: 450px;
+          }
+
+          button{
+            margin: 10px 0 20px;
+          }
+
+          .cDown{
+            font-size: 64px;
+            // margin-top: 77px;
+          }
+        }
+
+        .images{
+          // margin-left: -20px;
+          .tGuy{
+            // width: 828px;
+            position: relative;
+          }
+          .globe{
+            width: 667px;
+          }
+        }
+
+      }
+    }
+
+    .sec2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 30px 100px;
+      gap: 60px;
+      z-index: 5;
+      background: $purple;
+
+      .sec2-1{
+        padding-left: 30px;
+        img{
+          width: 490px;
+        }
+        z-index: 1;
+      }
+
+      .sec2-2{
+        z-index: 1;
+        text-align: left;
+        padding: 0 69px 0 0;
+
+        p{
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .sec3{
+      flex-direction: row-reverse;
+      z-index: 1;
+
+
+      .sec3-2{
+        width: 535px;
+        text-align: left;
+
+        p{
+          padding: 0;
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .sec4{
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 78px 119px;
+      z-index: 1;
+
+      .sec4-1{
+        width: 710px;
+      }
+
+      .sec4-2{
+        width: 564px;
+        text-align: left;
+        p{
+          padding: 0;
+          font-size: 14px;
+        }
+
+        button{
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .FAQ{
+      flex-direction: row;
+      justify-content: space-between;
+      margin: auto 0;
+      padding: 20px;
+      text-align: left;
+      z-index: 2;
+
+      .FAQ1{
+        width: 427px;
+        margin-left: 200px;
+
+        p, .answer{
+          font-size: 14px;
+        }
+
+        .question{
+          margin-bottom: 10px;
+          .ques{
+            font-size: 14px;
+            // margin-bottom: 5px;
+          }
+
+        }
+        hr{
+          margin-bottom: 10px;
+        }
+      }
+
+      .FAQ2{
+        margin: 0;
+        padding: 20px;
+
+        .mImg{
+          // margin-right: 0;
+          width: 741px;
+        }
+      }
+    }
+  }
+}
