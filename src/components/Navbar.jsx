@@ -11,9 +11,13 @@ const Navbar = ({isMobile}) => {
         <Link to="/">
           <li>Overview</li>
         </Link>
-        <li>FAQs</li>
-        <li>Contact</li>
-        <li><Button value="Register" /></li>
+        <li><a href="#faq">FAQs</a></li>
+        <Link to={"contact"}>
+          <li>Contact</li>
+        </Link>
+        <Link to='register'>
+          <li><Button value="Register" /></li>
+        </Link>
       </ul>
       <div>
         <img src={menu} alt="" className={`menu ${!isMobile ? "show" : "hidden"}` } />

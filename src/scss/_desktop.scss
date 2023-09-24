@@ -196,5 +196,189 @@
         }
       }
     }
+
+    .timeline{
+      p{
+        font-size: 14px;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .timeline1{
+        font-size: 12px;
+
+        p{
+          width: 346px;
+        }
+      }
+
+      .timeline2{
+
+        .timelines{
+          p{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .prizes{
+      display: flex;
+      z-index: 1;
+
+      .prizes1{
+        text-align: left;
+        margin-left: 350px;
+        margin-bottom: 80px;
+      }
+
+      .prizes2{
+        display: flex;
+        flex-direction: row;
+        gap: 37px;
+        // display: grid;
+        // grid-template-columns: 1fr 3fr;
+
+        .image{
+          img{
+            width: 548px;
+          }
+        }
+      }
+    }
+
+    .partners{
+      z-index: 1;
+      .partner1{
+        h2{
+          font-size: 32px;
+          margin-top: 100px;
+        }
+        p{
+          font-size: 14px;
+          width: 452px;
+          padding: 22px 20px 65px;
+          margin-bottom: 41px;
+        }
+      }
+
+      .partner2{
+        padding: 144px 178px;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        gap: 12px;
+        place-items: center;
+        place-content: center;
+        margin-bottom: 104.41px;
+
+        hr{
+          border: none;
+        }
+        .vertical{
+          height: 112px;
+          // margin: 5px 10px;
+        }
+
+        .horizontal{
+          border-bottom: 2px solid $pink;
+          width: 257px;
+          margin: 2px 0px;
+        }
+        .libA{
+          width: 120.56px;
+        }
+        .libP{
+          width: 213.19px;
+        }
+        .winwise{
+          width: 131.59px;
+        }
+        .wisper{
+          width: 147.03px;
+        }
+        .pay{
+          width: 204.37px;
+          font-size: 51px;
+
+          span{
+            color: #00A3FF;
+          }
+        }
+        .vplus{
+          display: flex;
+          flex-direction: column;
+          width: 231px;
+          line-height: 1;
+
+          .virtual{
+            font-size: 41px;
+
+            span{
+              color: #FF0000;
+            }
+          }
+          .tg{
+            font-size: 11px;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    .privacy{
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+
+      .privacy1{
+        .guidelines{
+          display: flex;
+          flex-direction: column;
+          width: 569px;
+          padding: 59px 72px;
+
+          .lPolicy{
+            display: flex;
+            justify-content: start;
+            text-align: left;
+            // place-content: left;
+            // place-items: left;
+  
+            image{
+              margin-right: 14px;
+            }
+  
+            p{
+              width: 401px;
+              font-size: 14px;
+            }
+          }
+  
+          button{
+            align-self: center;
+            text-align: center;
+          }
+        }
+        margin-left: 130px;
+
+      }
+
+      .privacy2{
+        margin-right: 60px;
+        .shield{
+          width: 530px;
+          margin-bottom: 219px;
+        }
+
+        .guard{
+          position: absolute;
+          top: 120px;
+          right: 11px;
+          width: 559px;
+        }
+      }
+
+    }
   }
 }

@@ -1,8 +1,25 @@
 button{
+  position: relative;
   background: $primaryColor;
   padding: 14.14px 46px 15.02px;
   border: none;
   border-radius: 3px;
+  
+  // &::after{
+  //   content: "";
+  //   border-radius: 3px;
+  //   position: absolute;
+  //   width: 172px;
+  //   height: 53px;
+  //   top:0;
+  //   left: 0;
+  //   background: $primaryColor;
+  // }
+
+  &:hover, &:focus{
+    background: $purple;
+    border: 2px solid $pink;
+  }
 }
 .heading2{
   font-size: 20px;
@@ -61,5 +78,46 @@ button{
 
   .prize{
     color: $lPurple;
+  }
+}
+
+@media (min-width: "780px"){
+  .rank{
+    width: 212px;
+    height: 296px;
+    padding-top: 111px;
+
+    img{
+      width: 179px;
+    }
+
+    p{
+      font-size: 24px;
+    }
+
+    .position{
+      font-size: 36px;
+      font-weight: 600;
+      padding: 5px 10px;
+      line-height: .8;
+
+      span{
+        font-size: 24px;
+      }
+    }
+
+    .prize{
+      font-size: 32px;
+      font-weight: 700;
+      color: $pink;
+    }
+  }
+
+  .G{
+    height: 347px;
+
+    img{
+      width: 295px;
+    }
   }
 }

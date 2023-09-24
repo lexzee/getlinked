@@ -15,9 +15,9 @@
   position: fixed;
   // margin-top: -50%;
 }
-.register{
-  // z-index: 2;
-}
+// .register{
+//   // z-index: 2;
+// }
 .reg-confirm{
   z-index: 0;
 }
@@ -585,13 +585,6 @@
       }
     }
   }
-  .prizes::before{
-    content: "";
-    width: 100vw;
-    background-color: #FF0000;
-    position: absolute;
-  }
-
 
   .partners{
     position: relative;
@@ -694,6 +687,7 @@
           }
         }
         .tg{
+          font-weight: 100;
           font-size: 4px;
           margin-left: auto;
         }
